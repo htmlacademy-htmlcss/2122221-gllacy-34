@@ -22,33 +22,43 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
   color: #565C66;
-}
-
-.pink {
   background-color: #FEAFC3;
 }
 
-.blue {
+.page-background-strawberry {
+  background-color: #FEAFC3;
+}
+
+.page-background-banana {
   background-color: #69A9FF;
 }
 
-.yellow {
+.page-background-marshmallow {
   background-color: #FCC850;
 }
 
 /* Buttons */
 
 .button {
+  font-family: inherit;
   line-height: 20px;
   text-align: center;
   color: #2D3440;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button-header {
@@ -76,11 +86,31 @@ body {
 
 /* Header */
 
+.header-navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.gllacy-logo-link {
+  margin-right: 16px;
+}
+
+.navigation-list {
+  width: 520px;
+  margin: 0;
+  padding: 0;
+}
+
 .header-navigation .navigation-link {
   line-height: 20px;
   text-align: center;
   color: #2D3440;
   text-decoration: none;
+}
+
+.header-contacts {
+  margin-left: auto;
 }
 
 .header-contacts-phone {
@@ -91,7 +121,23 @@ body {
   text-decoration: none;
 }
 
+.navigation-user {
+  max-width: 300px;
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+}
+
 /* Main index */
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
 
 .slider-title {
   font-size: 36px;
@@ -106,14 +152,29 @@ body {
   color: #2D3440;
 }
 
+.social-list {
+  margin: 0;
+  padding: 0;
+}
+
 .presents-title {
+  width: 434px;
+  margin: 0 auto;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
   color: #2D3440;
 }
 
+.presents-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .presents-item {
+  width: 570px;
   background-color: #FF7799;
 }
 
@@ -143,13 +204,23 @@ body {
 }
 
 .popular-products-title {
+  width: 527px;
+  margin: 0 auto;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
   color: #2D3440;
 }
 
+.popular-products-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .popular-product-item {
+  width: 270px;
   background-color: #FCFCFC;
 }
 
@@ -184,7 +255,13 @@ body {
   color: #2D3440;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .blog {
+  width: 570px;
   background-image: url("../images/index/sherbet-serving.jpg");
   background-color: #FFFFFF;
   background-repeat: no-repeat;
@@ -203,6 +280,7 @@ body {
 }
 
 .newsletter {
+  width: 570px;
   background-image: url("../images/index/newsletter-background-image.png");
   background-color: #FFFFFF;
   background-repeat: no-repeat;
@@ -210,6 +288,10 @@ body {
 
 .newsletter-container {
   background-color: #FFFFFF;
+}
+
+.field {
+  font-family: inherit;
 }
 
 .delivery {
@@ -272,6 +354,17 @@ body {
 
 /* Footer */
 
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.social {
+  width: 110px;
+  margin-right: 300px;
+}
+
 .footer-navigation .navigation-link {
   font-size: 14px;
   line-height: 20px;
@@ -281,6 +374,11 @@ body {
 
 .navigation-strong {
   font-weight: 700;
+}
+
+.htmlacademy {
+  width: 210px;
+  margin-left: auto;
 }
 
 .about-htmlacademy-text {
@@ -294,6 +392,11 @@ body {
 }
 
 /* Main catalog */
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+}
 
 .breadcrumbs-link {
   font-size: 14px;
@@ -316,18 +419,35 @@ body {
 }
 
 .catalog-filter {
+  width: 823px;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
 }
 
-.select-control,
+.select-control {
+  font-family: inherit;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
 .catalog-filter-list {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .product-card {
+  width: 270px;
   background-color: #FCFCFC;
+}
+
+.product-card:not(:nth-child(4n)) {
+  margin-right: 30px;
 }
 
 .product-title {
@@ -344,9 +464,22 @@ body {
   color: #2D3440;
 }
 
+.pagination-container {
+  display: flex;
+}
+
+.pagination-container .button {
+  margin-left: 488px;
+}
+
+.pagination {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
 .pagination-link {
   line-height: 20px;
-  font-weight: 400;
   color: #2D3440;
   text-decoration: none;
 }
