@@ -17,6 +17,27 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="button button-navigation button-navigation-current" href="catalog.html">Каталог</a>
+            <div class="popover popover-catalog">
+              <div class="popover-content">
+                <ul class="catalog-items-list">
+                  <li class="catalog-item catalog-strong">
+                    <a class="catalog-link" href="#">Новинки</a>
+                  </li>
+                  <li class="catalog-item catalog-item-current">
+                    <a class="catalog-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="catalog-item">
+                    <a class="catalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="button button-navigation" href="#">Доставка и оплата</a>
@@ -38,6 +59,23 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popover popover-search">
+              <div class="popover-content">
+                <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <label class="visually-hidden" for="search-text">Поиск</label>
+                  <input class="field" type="text" placeholder="Поиск по сайту" name="search-text" id="search-text"
+                    required>
+                  <button class="search-form-delete-button" type="button">
+                    <svg class="cross-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                      viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" />
+                    </svg>
+                    <span class="visually-hidden">Очистить поле поиска</span>
+                  </button>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="button button-user button-user-login" href="#">
@@ -47,6 +85,34 @@
                   d="M8 .67C8 .3 8.3 0 8.67 0h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 .67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.67.67 0 0 1 .2.48.66.66 0 0 1-.2.47L5.8 10.47a.67.67 0 1 1-.94-.94l2.2-2.2H.66A.67.67 0 1 1 .67 6h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" />
               </svg>
               Вход</a>
+            <div class="popover popover-login">
+              <div class="popover-content">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="field-group">
+                    <label class="visually-hidden" for="login-email">Email</label>
+                    <input class="field" type="email" placeholder="email@example.com" name="login-email"
+                      id="login-email" required>
+                  </p>
+                  <p class="field-group">
+                    <label class="visually-hidden" for="login-password">Пароль</label>
+                    <input class="field" type="password" placeholder="Пароль" name="login-password" id="login-password"
+                      required>
+                  </p>
+                  <div class="login-wrapper">
+                    <button class="button button-additional" type="submit">Войти</button>
+                    <ul class="login-links-list">
+                      <li class="login-link-item">
+                        <a class="login-link" href="#">Забыли пароль?</a>
+                      </li>
+                      <li class="login-link-item">
+                        <a class="login-link" href="#">Регистрация</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="button button-user button-user-basket" href="#">
@@ -56,6 +122,58 @@
                   d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" />
               </svg>
               2 товара</a>
+            <div class="popover popover-basket">
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="basket-items-list">
+                  <li class="basket-item">
+                    <img class="basket-item-image" src="images/catalog/raspberry.jpg" width="46" height="46"
+                      alt="Шарик мороженого «Малинка».">
+                    <div class="basket-item-description">
+                      <p class="basket-item-title">Малинка</p>
+                      <span class="basket-item-quantity">1 кг</span>
+                      <span class="basket-item-price">310 ₽</span>
+                    </div>
+                    <p class="basket-item-amount">310 ₽</p>
+                    <button class="basket-item-delete-button" type="button">
+                      <svg class="cross-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                        viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket-item">
+                    <img class="basket-item-image" src="images/catalog/bubble-gum.jpg" width="46" height="46"
+                      alt="Шарик мороженого «Бабл-гам».">
+                    <div class="basket-item-description">
+                      <p class="basket-item-title">Бабл-гам</p>
+                      <span class="basket-item-quantity">1,5 кг</span>
+                      <span class="basket-item-price">320 ₽</span>
+                    </div>
+                    <p class="basket-item-amount">480 ₽</p>
+                    <button class="basket-item-delete-button" type="button">
+                      <svg class="cross-icon" aria-hidden="true" focusable="false" width="10" height="10"
+                        viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="basket-wrapper">
+                  <a class="button button-additional" href="#">Оформить заказ</a>
+                  <p class="basket-items-total">Итого: 790 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="popover popover-basket-empty">
+              <div class="popover-content">
+                <p class="basket-empty-title">Ваша корзина пока пуста</p>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -77,7 +195,7 @@
         <section class="catalog-products">
           <h2 class="catalog-products-title">Сливочное мороженое</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <p>
+            <p class="catalog-filter-group">
               <label class="catalog-filter-title" for="sort-select">Сортировка:</label>
               <select class="select-control" name="sort-select" id="sort-select">
                 <option value="popular">по популярности</option>
@@ -87,31 +205,60 @@
               </select>
             </p>
 
+            <fieldset class="catalog-filter-group range">
+              <legend class="catalog-filter-title">Цена:</legend>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="100" name="min-price">₽
+                </label>
+                <label class="catalog-filter-label">
+                  - <input class="range-input" type="number" value="500" name="max-price">₽
+                </label>
+              </div>
+              <div class="range-scale-wrapper">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 40px; width: 72px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="product-group" type="radio" value="0%">
-                    0%
+                    <input class="visually-hidden control-input" name="product-group" type="radio" value="0%">
+                    <span class="control-mark"></span>
+                    <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="product-group" type="radio" value="below 10%">
-                    до 10%
+                    <input class="visually-hidden control-input" name="product-group" type="radio" value="below 10%"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">до 10%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="product-group" type="radio" value="below 30%">
-                    до 30%
+                    <input class="visually-hidden control-input" name="product-group" type="radio" value="below 30%">
+                    <span class="control-mark"></span>
+                    <span class="control-label">до 30%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="product-group" type="radio" value="above 30%">
-                    выше 30%
+                    <input class="visually-hidden control-input" name="product-group" type="radio" value="above 30%">
+                    <span class="control-mark"></span>
+                    <span class="control-label">выше 30%</span>
                   </label>
                 </li>
               </ul>
@@ -122,32 +269,62 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="chocolate" type="checkbox">
-                    шоколадные
+                    <input class="visually-hidden control-input" name="chocolate" type="checkbox" checked>
+                    <span class="control-mark"></span>
+                    <svg class="check-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                    </svg>
+                    <span class="control-label">шоколадные</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="sugar-sprinkles" type="checkbox">
-                    сахарные посыпки
+                    <input class="visually-hidden control-input" name="sugar-sprinkles" type="checkbox" checked>
+                    <span class="control-mark"></span>
+                    <svg class="check-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                    </svg>
+                    <span class="control-label">сахарные посыпки</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="fruits" type="checkbox">
-                    фрукты
+                    <input class="visually-hidden control-input" name="fruits" type="checkbox">
+                    <span class="control-mark"></span>
+                    <svg class="check-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                    </svg>
+                    <span class="control-label">фрукты</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="syrups" type="checkbox">
-                    сиропы
+                    <input class="visually-hidden control-input" name="syrups" type="checkbox">
+                    <span class="control-mark"></span>
+                    <svg class="check-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                    </svg>
+                    <span class="control-label">сиропы</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" name="jams" type="checkbox">
-                    джемы
+                    <input class="visually-hidden control-input" name="jams" type="checkbox">
+                    <span class="control-mark"></span>
+                    <svg class="check-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
+                    </svg>
+                    <span class="control-label">джемы</span>
                   </label>
                 </li>
               </ul>
